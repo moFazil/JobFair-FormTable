@@ -1,0 +1,53 @@
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+/* Add this to your table.css file or a separate CSS file */
+.table-container {
+  max-height: 400px; /* Set the desired height for the scrollable area */
+  overflow-y: hidden;
+  position: relative;
+}
+
+.table-scroll {
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style the header row */
+thead th {
+  background-color: #f2f2f2;
+}
+
+/* Style the buttons */
+button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Ensure data is displayed in one line with ellipsis for overflow */
+table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%; /* Adjust the maximum width as needed */
+}
